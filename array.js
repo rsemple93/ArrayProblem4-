@@ -1,6 +1,11 @@
 /* Remove duplicate numbers in an array */
+function removeDuplicates(arr){
+	let uniqueArray = arr.filter((value, index) => arr.indexOf(value) === index);
+	
+	console.log(uniqueArray);
+}
 
-let array = [1, 1, 3, 5, 5, 8, 21,21]
-let uniqueArray = array.filter((value, index) => array.indexOf(value) === index);
+removeDuplicates([1, 1, 3, 5, 5, 8, 21, 21]);
 
-console.log(uniqueArray);
+
+
